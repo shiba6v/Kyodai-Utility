@@ -44,7 +44,7 @@ redirect_page = redirect_link.click
 redirect_form = redirect_page.forms.first
 redirect_button = redirect_form.button_with()
 
-# 履修登録トップページtoppupe-ji
+# 履修登録トップページ
 kulasis_page = redirect_form.click_button(redirect_button)
 register_pre_link = kulasis_page.links.find{|item| item.text.include?("履修登録")}
 puts "==================#{register_pre_link.href}======================"
